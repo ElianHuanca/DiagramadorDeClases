@@ -1,7 +1,7 @@
-# Plataforma Web De Diagramador De Clases
+# Plataforma Web De Diagramador De Clases Con Sockets
 
 <p align="center">
-  <img loading="lazy" src="https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/UML-Class-Diagram-Example-Transparent.png" alt="Logo" />
+  <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMKN-lX0ADHy4qzRxabdwBL9qMjFXCCXPlc3vioNFh5KqxTTvBfblJNRN4b33tV-b6Z20&usqp=CAU" alt="Logo" />
 </p>
 
 Es un Diagramador De Clases que contiene Sockets, en cada diagrama de clases pueden entrar varios usuarios mediante un link de invitación generado.
@@ -61,16 +61,6 @@ Es un Diagramador De Clases que contiene Sockets, en cada diagrama de clases pue
 
 Echa un vistazo a algunas interfaces de la plataforma a continuación.
 
-*Login*
-<p align="center">
-    <img loading="lazy" width="90%" src="./InterfacesDeUsuario/Login.png" alt="Login" />
-</p>
-
-*Register*
-<p align="center">
-    <img loading="lazy" width="90%" src="./InterfacesDeUsuario/Register.png" alt="Register" />
-</p>
-
 *Lista De Proyectos*
 <p align="center">
     <img loading="lazy" width="90%" src="./InterfacesDeUsuario/ListaDeProyectos.png" alt="ListaDeProyectos" />
@@ -84,4 +74,14 @@ Echa un vistazo a algunas interfaces de la plataforma a continuación.
 *Diagrama Con La Vista De Relaciones*
 <p align="center">
     <img loading="lazy" width="90%" src="./InterfacesDeUsuario/Relaciones.png" alt="Relaciones" />
+</p>
+
+*Login*
+<p align="center">
+    <img loading="lazy" width="90%" src="./InterfacesDeUsuario/Login.png" alt="Login" />
+</p>
+
+*Register*
+<p align="center">
+    <img loading="lazy" width="90%" src="./InterfacesDeUsuario/Register.png" alt="Register" />
 </p>
