@@ -1,79 +1,80 @@
-# Plataforma Web De Diagramador De Clases Con Sockets
+# Web Class Diagram Platform With Sockets
+[English](./README.md) | [Español](./README.es.md)
 
 <p align="center">
   <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMKN-lX0ADHy4qzRxabdwBL9qMjFXCCXPlc3vioNFh5KqxTTvBfblJNRN4b33tV-b6Z20&usqp=CAU" alt="Logo" />
 </p>
 
-Es un Diagramador De Clases que contiene Sockets, en cada diagrama de clases pueden entrar varios usuarios mediante un link de invitación generado.
+It's a Class Diagram tool that incorporates sockets, allowing multiple users to join each class diagram through an invitation link.
 
-## Funciones Clave
+## Key Features
 
-- Autenticacion con un Login y Resgistro.
-- Almacenamiento, Listado y Registro De Los Proyectos.
-- Guardado Del Avance De los Proyectos.
-- Integracion De Sockets Para Los Cambios En El Diagramador En Tiempo Real.
-- Implementacion De Atributos y Relaciones Para Las Clases.
-- Generador De Link Para La Invitacion De Otros Usuario al Diagramador.
+- Authentication with Login and Registration.
+- Storage, Listing, and Registration of Projects.
+- Saving Project Progress.
+- Integration of Sockets for Real-time Changes in the Class Diagram.
+- Implementation of Attributes and Relationships for Classes.
+- Link Generator for Inviting Other Users to the Class Diagram.
 
-## Requisitos Del Sistema
+## System Requirements
 
-- NodeJS v18.16.1 o superior
-- Nodemon v2.0.19 o superior
-- MongoDBCompass (Opcional)
+- NodeJS v18.16.1 or higher
+- Nodemon v2.0.19 or higher
+- MongoDB Compass (Optional)
 
-## Instalacion
+## Installation
 
-1. Clona este repositorio:
+1. Clone this repository:
 
     ```bash
     git clone https://github.com/ElianHuanca/DiagramadorDeClases.git
     ```
 
-2. Instala las dependencias de los proyectos (realiza el comando por cada proyecto):
+2. Install project dependencies (execute the command for each project):
 
     ```bash
     npm install
     ```
 
-3. Configura las variables de entorno en el archivo .env del backend (NodeJS), para la conexion con MongoDB :
+3. Configure the environment variables in the backend's .env file (NodeJS) for MongoDB connection:
 
     ```bash
     MONGODB_CNN=mongodb+srv://ElianHuanca:<Password>@uagrmdb.mqevenn.mongodb.net/diagrammerDB
     ```
 
-4. Inicia el servidor de desarrollo de ambos proyectos:
+4. Start the development server for both projects:
 
-- Para El Frotend
+- For Frontend
 
     ```bash
     npm run dev
     ```
 
-- Para El Backend
+- For Backend
 
     ```bash
     nodemon app
     ```
 
-5. Abre tu navegador y visita http://localhost:5173 para acceder a la plataforma.
+5. Open your browser and visit http://localhost:5173 to access the platform.
 
-## Interfaces De Usuario
+## User Interfaces
 
-Echa un vistazo a algunas interfaces de la plataforma a continuación.
+Take a look at some platform interfaces below.
 
-*Lista De Proyectos*
+*List of Projects*
 <p align="center">
-    <img loading="lazy" width="90%" src="./InterfacesDeUsuario/ListaDeProyectos.png" alt="ListaDeProyectos" />
+    <img loading="lazy" width="90%" src="./InterfacesDeUsuario/ListaDeProyectos.png" alt="List of Projects" />
 </p>
 
-*Diagrama Con La Vista De Atributos*
+*Diagram with Attribute View*
 <p align="center">
-    <img loading="lazy" width="90%" src="./InterfacesDeUsuario/Atributos.png" alt="Atributos" />
+    <img loading="lazy" width="90%" src="./InterfacesDeUsuario/Atributos.png" alt="Attributes" />
 </p>
 
-*Diagrama Con La Vista De Relaciones*
+*Diagram with Relationship View*
 <p align="center">
-    <img loading="lazy" width="90%" src="./InterfacesDeUsuario/Relaciones.png" alt="Relaciones" />
+    <img loading="lazy" width="90%" src="./InterfacesDeUsuario/Relaciones.png" alt="Relationships" />
 </p>
 
 *Login*
