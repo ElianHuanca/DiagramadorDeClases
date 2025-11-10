@@ -26,18 +26,18 @@ export const RegisterPage = () => {
           <h2 className='text-4xl font-bold text-center py-4'>Register</h2>
 
           <div className='flex flex-col mb-4'>
-            <label>Username</label>
+            <label>Usuario</label>
             <input className='border relative bg-gray-100 p-2' type="text" value={nombre} onChange={onInputChange} name="nombre" required />
           </div>
           <div className='flex flex-col '>
-            <label>Password</label>
+            <label>Contraseña</label>
             <input className='border relative bg-gray-100 p-2' type="password" value={password} onChange={onInputChange} name="password" required />
           </div>
-          <button disabled={isAuthenticating} className='w-full py-3 mt-8 bg-indigo-600 hover:bg-indigo-500 relative text-white' type="submit">Sign In</button>
+          <button disabled={isAuthenticating} className='w-full py-3 mt-8 bg-indigo-600 hover:bg-indigo-500 relative text-white' type="submit">Registrarse</button>
 
-          <p className='text-center mt-8'>No Tienes Cuenta?</p>
-          <Link to="/auth/register" className="text-center block relative">
-            <span className="hover:text-slate-600">Registrate</span>
+          <p className='text-center mt-8'>Ya tienes cuenta?</p>
+          <Link to="/auth/login" className="text-center block relative">
+            <span className="hover:text-slate-600">Inicia Sesión</span>
           </Link>
         </form>
       </div>

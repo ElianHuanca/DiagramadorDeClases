@@ -1,2 +1,1 @@
-export const baseUrl = "http://localhost:8080/api";
-//export const baseUrl = "https://diagrammerdb-nodejs-production.up.railway.app/api";
+export const baseUrl = import.meta.env.VITE_API_URL + "/api";
