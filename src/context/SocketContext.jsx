@@ -4,7 +4,8 @@ import { useSocket } from "../hooks/useSocket";
 export const SocketContext = createContext();
 
 export const SocketProvider = ({ children }) => {    
-    const url = import.meta.env.VITE_API_URL;
+    //const url = import.meta.env.VITE_API_URL;
+    const url = window.__ENV__.API_URL;
     const { socket, online } = useSocket(url);
 
     return (

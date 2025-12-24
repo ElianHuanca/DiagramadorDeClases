@@ -1,0 +1,21 @@
+services:
+  diagramador-backend:
+    image: elianhuanca/diagramador-backend:latest
+    container_name: diagramador-backend
+    ports:
+      - "8080:8080"
+    env_file:
+      - ./.env
+    restart: always
+
+  diagramador-frontend:
+    image: elianhuanca/diagramador-frontend:latest
+    container_name: diagramador-frontend
+    ports:
+      - "3000:80"
+    environment:
+      API_URL: http://localhost:8080
+    depends_on:
+      diagramador-backend: 
+        condition: service_started
+    restart: always
