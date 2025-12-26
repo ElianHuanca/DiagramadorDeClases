@@ -4,6 +4,8 @@ kubectl get pod
 
 kubectl apply -f backend-secrets.yml
 kubectl apply -f backend.yml
+kubectl apply -f frontend-config.yml
+kubectl apply -f frontend.yml
 
 kubectl get all
 
@@ -14,4 +16,5 @@ kubectl rollout restart deployment <nombre del deployment>
 minikube ip 
 
 minikube ssh -- docker images
-minikube service backend-service
+minikube service diagramador-backend
+minikube service frontend-service
