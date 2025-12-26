@@ -15,6 +15,7 @@ services:
       - "3000:80"
     environment:
       API_URL: http://localhost:3000/diagramador-backend
+      SOCKET_URL: http://localhost:3000/
     depends_on:
       diagramador-backend: 
         condition: service_started

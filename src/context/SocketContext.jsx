@@ -5,7 +5,7 @@ export const SocketContext = createContext();
 
 export const SocketProvider = ({ children }) => {    
     //const url = import.meta.env.VITE_API_URL;
-    const url = window.__ENV__.API_URL;
+    const url = window.__ENV__.SOCKET_URL;
     console.log("SocketProvider - URL:", url);
     const { socket, online } = useSocket(url);
 
