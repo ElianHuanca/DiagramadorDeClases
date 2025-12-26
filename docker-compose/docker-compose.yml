@@ -2,8 +2,8 @@ services:
   diagramador-backend:
     image: elianhuanca/diagramador-backend:latest
     container_name: diagramador-backend
-    ports:
-      - "8080:8080"
+    #ports:
+    #  - "8080:8080"
     env_file:
       - ./.env
     restart: always
@@ -14,7 +14,7 @@ services:
     ports:
       - "3000:80"
     environment:
-      API_URL: http://localhost:8080
+      API_URL: http://localhost:3000/diagramador-backend
     depends_on:
       diagramador-backend: 
         condition: service_started
