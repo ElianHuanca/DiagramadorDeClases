@@ -16,4 +16,4 @@ minikube ip
 
 minikube ssh -- docker images
 minikube service diagramador-backend
-minikube service frontend-service
+minikube service diamgramador-frontend
