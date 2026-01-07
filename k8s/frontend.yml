@@ -18,7 +18,13 @@ spec:
       - name: frontend
         image: elianhuanca/diagramador-frontend
         ports:
-        - containerPort: 3000                         
+        - containerPort: 3000          
+#        env:                
+#          - name: API_URL
+#            valueFrom:
+#              configMapKeyRef:
+#                name: frontend-config
+#                key: API_URL       
 
 ---
 apiVersion: v1

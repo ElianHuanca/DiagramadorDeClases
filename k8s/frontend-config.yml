@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: frontend-config
 data:
-  API_URL: http://localhost:30301/diagramador-backend
-  SOCKET_URL: http://localhost:30301/
+  API_URL: http://127.0.0.1:58587
+  #SOCKET_URL: http://localhost:30301/

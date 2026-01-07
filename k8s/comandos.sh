@@ -4,6 +4,7 @@ kubectl get pod
 
 kubectl apply -f backend-secrets.yml
 kubectl apply -f backend.yml
+kubectl apply -f frontend-config.yml
 kubectl apply -f frontend.yml
 
 kubectl get all
@@ -16,4 +17,4 @@ minikube ip
 
 minikube ssh -- docker images
 minikube service diagramador-backend
-minikube service diamgramador-frontend
+minikube service diagramador-frontend
