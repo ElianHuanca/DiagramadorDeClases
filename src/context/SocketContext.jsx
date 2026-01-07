@@ -7,7 +7,7 @@ export const SocketProvider = ({ children }) => {
     //const url = import.meta.env.VITE_API_URL;
     const url = window.__ENV__?.API_URL
         ? `${window.__ENV__.API_URL}`
-        : `${window.location.origin}/socket.io`;
+        : `${window.location.origin}/socket.io/`;
     console.log("Socket URL:", url);
     const { socket, online } = useSocket(url);
 
